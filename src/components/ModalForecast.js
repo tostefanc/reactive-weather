@@ -39,7 +39,7 @@ function Forecast({title, query, clientId, clientSecret}) {
                     <Modal.Title>{title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <div className="forecast-container d-flex justify-content-center align-items-center">
+                    <div className="forecast-container d-flex justify-content-center align-items-center flex-sm-wrap">
                         {forecastedPeriod.map((period, i) => (
                             <span key={i} className="forecast-child">
                                 <img
