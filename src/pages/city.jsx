@@ -57,9 +57,9 @@ const City = () => {
                       <div className="card-body">
                           <h5 className="card-title font-weight-bold">{cityName}</h5>
                           <div className="card-text">
-                              <p className="card-text">Max temperature: {maxTemp} &deg;C</p>
-                              <p className="card-text">Min temperature: {minTemp} &deg;C</p>
-                              <p className="card-text">It actually feels like: {feelsLike} &deg;C</p>
+                              <p className="card-text">Max temperature: {maxTemp}&deg;C</p>
+                              <p className="card-text">Min temperature: {minTemp}&deg;C</p>
+                              <p className="card-text">It actually feels like: {feelsLike}&deg;C</p>
                               <div className="text-muted m-3">
                                   <ReactTimeAgo date={new Date()} locale="en-US" timeStyle="round-minute"/>
                               </div>

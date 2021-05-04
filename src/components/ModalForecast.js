@@ -39,7 +39,7 @@ function Forecast({title, query, clientId, clientSecret}) {
                     <Modal.Title>{title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <div className="forecast-container d-flex justify-content-center align-items-center">
+                    <div className="forecast-container d-flex justify-content-center align-items-center flex-sm-wrap">
                         {forecastedPeriod.map((period, i) => (
                             <span key={i} className="forecast-child">
                                 <img
@@ -47,9 +47,9 @@ function Forecast({title, query, clientId, clientSecret}) {
                                     alt={'forecast'}
                                 />
                                 <p>{period.dateTimeISO.split('T').shift().toString()}</p>
-                                <p>Max: {period.maxTempC} &deg;C</p>
-                                <p>Min: {period.minTempC} &deg;C</p>
-                                <p>Feels like: {period.avgFeelslikeC} &deg;C</p>
+                                <p>Max: {period.maxTempC}&deg;C</p>
+                                <p>Min: {period.minTempC}&deg;C</p>
+                                <p>Feels like: {period.avgFeelslikeC}&deg;C</p>
                             </span>
                         ))}
                     </div>
