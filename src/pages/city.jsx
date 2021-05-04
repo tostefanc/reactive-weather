@@ -21,7 +21,7 @@ const City = () => {
     (cityName === 'City Name') ? document.title='Reactive Weather' : document.title=`${cityName}`;
 
   useEffect(()=> {
-    // getInfo();
+    getInfo();
     // eslint-disable-next-line
   },[location])
 
