@@ -34,7 +34,10 @@ function App() {
                                 >
                                     404: This is not the page you are looking for
                                 </h1>
-                                <img src={process.env.PUBLIC_URL + `/images/not-found.jpg`} />
+                                <img
+                                    src={process.env.PUBLIC_URL + `/images/not-found.jpg`}
+                                    alt="not-found"
+                                />
                             </div>
                         }
                     />
