@@ -47,9 +47,9 @@ function Forecast({title, query, clientId, clientSecret}) {
                                     alt={'forecast'}
                                 />
                                 <p>{period.dateTimeISO.split('T').shift().toString()}</p>
-                                <p>Max: {period.maxTempC} &deg;C</p>
-                                <p>Min: {period.minTempC} &deg;C</p>
-                                <p>Feels like: {period.avgFeelslikeC} &deg;C</p>
+                                <p>Max: {period.maxTempC}&deg;C</p>
+                                <p>Min: {period.minTempC}&deg;C</p>
+                                <p>Feels like: {period.avgFeelslikeC}&deg;C</p>
                             </span>
                         ))}
                     </div>
